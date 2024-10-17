@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <div class="heading">
+            <h2>Text to Speech Converter</h2>
+            <!-- <p>&</p> -->
+            <h3>Speech to Text Converter</h3>
+           
+        </div>
+    <div class="main">
+        <div class="container">
+            <h1>Speech to Text</h1>
+            <div class="button">
+                <button id="startButton"><img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="" width="50" height="50"></button>
+                <small>Tap to Record</small>
+            </div>
+            <div id="output"></div>
+            <div class="buttons">
+                <button id="copyButton">Copy Text</button>
+                <button id="clearButton">Clear Text</button>
+            </div>
+        
+            <div id="convert_text"></div>
+        </div>
+        <div class="main2">
+            <div class="container">
+                <h1> Text to Speech </h1>
+                <div class="button">
+                    <button id="startButton"><img src="volume-level.png" alt="" width="60" height="60"></button>
+                    <small>Speaking......</small>
+                    <small>.</small>
+                </div>
+                <div class="interaction-container">
+                    <textarea id="textToConvert" 
+                        placeholder="Enter text to convert into speech..." 
+                        id="" cols="50" rows="6" 
+                        class="text-control"></textarea>
+    
+                    <p class="error-para"></p>
+    
+                    <button class="btn" id="convertBtn">
+                        Play Converted Sound
+                    </button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    
+
+        <!-- Script jS -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
